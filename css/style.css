@@ -200,11 +200,6 @@ header h2 {
   color: #CEC8FF;
 }
 
-footer {
-  background-image: linear-gradient(#CEC8FF, white);
-  padding: 30px;
-}
-
 .jumbotron {
   padding: 30px;
   margin: 0;
@@ -224,6 +219,11 @@ footer {
 
 .breadcrumb {
   background-color: white;
+}
+
+.site-footer {
+  background-image: linear-gradient(#CEC8FF, white);
+  padding: 20px 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
