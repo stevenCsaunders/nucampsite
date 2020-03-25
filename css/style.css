@@ -234,4 +234,10 @@ header h2 {
   border: solid #901EAD;
 }
 
+.carousel-button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
 /*# sourceMappingURL=style.css.map */
