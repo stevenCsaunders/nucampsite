@@ -5,9 +5,11 @@
   "main": "index.html",
   "scripts": {
     "lite": "lite-server",
-    "start": "npm run lite",
+    "start": "npm run watch:all",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass -o css/ css/"
+    "scss": "node-sass -o css/ css/",
+    "watch:sass": "onchange 'css/*.sass' -- npm run scss",
+    "watch:all": "parallelshell 'npm run watch:sass' 'npm run lite'"
   },
   "repository": {
     "type": "git",
@@ -20,7 +22,9 @@
   },
   "homepage": "https://github.com/stevenCsaunders/nucampsite#readme",
   "devDependencies": {
-    "lite-server": "^2.3.0"
+    "lite-server": "^2.3.0",
+    "onchange": "^3.3.0",
+    "parallelshell": "^3.0.1"
   },
   "dependencies": {
     "bootstrap": "^4.0.0",
