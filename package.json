@@ -11,8 +11,8 @@
     "watch:sass": "onchange 'css/*.sass' -- npm run scss",
     "watch:all": "parallelshell 'npm run watch:sass' 'npm run lite'",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
-    "imagemin": "imagemin img/* -o dist/img",
-    "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+    "imagemin": "imagemin img/* --out-dir=dist/img",
+    "usemin": "usemin contact-us.html -d dist --htmlmin -o dist/contact-us.html && usemin about-us.html -d dist --htmlmin -o dist/about-us.html && usemin index.html -d dist --htmlmin -o dist/index.html",
     "clean": "rimraf dist",
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
   },
