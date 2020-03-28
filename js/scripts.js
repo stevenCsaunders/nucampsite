@@ -1,4 +1,15 @@
 $(function() {
+//-------RESERVE MODAL -------
+    $("#reserveButton").click(function() {
+        $("#reserveModal").modal("show");
+    })
+
+//------LOGIN MODAL --------
+    $("#loginButton").click(function() {
+        $("#loginModal").modal("show");
+    })
+    
+//------CAROUSEL BUTTONS -------
     $(".carousel").carousel( { interval: 2000 } );
     $("#carouselButton").click(function(){
         if ($("#carouselButton").children("i").hasClass("fa-pause")) {
